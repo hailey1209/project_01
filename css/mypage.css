@@ -1,0 +1,128 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./footer.css');
+
+:root{
+    --main-color: #FF6347;
+    --secondary-color: #4682B4;
+    --main-bg-color: #FFFAFA;
+    --main-btn-color: #008080;
+}
+body.dark{
+    background-color: #333;
+    color: white;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+
+header .navbar .logo a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+footer{
+    position: fixed;
+    display: none;
+}
+
+/* 개인정보 리스트 */
+main{
+    height: 100vh;
+}
+main .personal-detail{
+    /* border: 1px solid green; */
+    width: 90%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+main .personal-detail h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+main .personal-detail .detail-container,
+main .personal-detail .personal-list{
+    border: 1px solid var(--main-color);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    background-color: #FF6347;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+main .personal-detail .details,
+main .personal-detail .list-items{
+    border: 1px solid var(--main-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+main .personal-detail .details ul li{
+    margin: 1rem;
+    display: flex;
+}
+main .personal-detail .details ul li label{
+    width: 5rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+main .personal-detail .details ul li p{
+    margin-left: 1rem;
+}
+main .personal-detail .details .edit-btn {
+    /* border: 1px solid red; */
+    text-align: end;
+}
+main .personal-detail .details .edit-btn button{
+     border: none;
+     height: 2.5rem;
+     width: 5rem;
+     border-radius: 0.5rem;
+     background-color: var(--main-color);
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
+}
+main .personal-detail .list-items ul{
+    display: flex;
+}
+main .personal-detail .list-items ul li{
+    /* border: 1px solid red; */
+    width: 150px;
+    height: 250px;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+    /* overflow: hidden; */
+    cursor: pointer;
+    position: relative;
+}
+main .personal-detail .list-items ul li button{
+    border: none;
+    border-radius: 50%;
+    background-color: #888;
+    color: white;
+    padding-bottom: 0.2rem;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    cursor: pointer;
+}
+main .personal-detail .list-items ul li button:hover{
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+}
+main .personal-detail .list-items ul li .item-img{
+    border: 1px solid #008080;
+    width: 70%;
+    height: 60%;
+    margin: 0.5rem auto;
+}
+main .personal-detail .list-items ul li .item-detail{
+    text-align: center;
+}

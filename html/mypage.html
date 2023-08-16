@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/mypage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+     <!-- HEADER -->
+     <header class="">
+        <!-- 헤더 메인 네비게이션 -->
+        <section class="navbar">
+            <div class="logo">
+                <a href="../index.html">ZIPFLIX</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./html/about.html">About</a></li>
+                    <li><a href="./html/mypage.html">My page</a></li>
+                </ul>
+            </div>
+            <div class="account">
+                <div class="avatar"></div>
+                <div class="userID">USER ID</div>
+            </div>
+            <div class="mode">
+                <span class="material-symbols-outlined toggle-on show">toggle_on</span>
+                <span class="material-symbols-outlined toggle-off">toggle_off</span>
+            </div>
+        </div>
+            <div class="ham-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="personal-detail">
+            <h1>ㅇㅇㅇ님의 정보</h1>
+            <!-- 개인 정보 -->
+            <div class="detail-container">
+                <span>나의 정보</span>
+                <span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="details">
+                <ul>
+                    <li class="name">
+                        <label for="name">이름</label>
+                        <p id="name">사용자 이름</p>
+                    </li>
+                    <li class="email">
+                        <label for="email">email</label>
+                        <p id="email">사용자 이메일</p>
+                    </li>
+                    <li class="userId">
+                        <label for="userId">닉네임</label>
+                        <p id="userId">사용자 닉네임</p>
+                    </li>
+                    <li class="password">
+                        <label for="password">비밀번호</label>
+                        <p id="password">최근 변경 내역</p>
+                    </li>
+                </ul>
+                <div class="edit-btn">
+                    <button type="button">수정하기</button>
+                </div>
+            </div>
+            <!-- 개인 영화 리스트 -->
+            <div class="personal-list">
+                <span>나의 영화 목록</span>
+                <span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list-items">
+                <ul>
+                    <li>
+                        <div class="item-img">
+                            <!-- <img src="../asset/imgs/movies_02.jpg" alt=""> -->
+                        </div>
+                        <div class="item-detail">
+                            <h3>title</h3>
+                        </div>
+                        <button>x</button>
+                    </li>
+                    <li>
+                        <div class="item-img">
+                            <!-- <img src="../asset/imgs/movies_02.jpg" alt=""> -->
+                        </div>
+                        <div class="item-detail">
+                            <h3>title</h3>
+                        </div>
+                        <button>x</button>
+                    </li>
+                    <li>
+                        <div class="item-img">
+                            <!-- <img src="../asset/imgs/movies_02.jpg" alt=""> -->
+                        </div>
+                        <div class="item-detail">
+                            <h3>title</h3>
+                        </div>
+                        <button>x</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer-container">
+            <div class="left">
+                <div class="logo">
+                    <h1>ZIPFLIX</h1>
+                </div>
+            </div>
+            <div class="mid">
+                <ul>
+                    <li>고객 센터</li>
+                    <li>미디어 센터</li>
+                    <li>이용약관</li>
+                    <li>쿠키설정</li>
+                    <li>문의하기</li>
+                    <li>법적고지</li>
+                    <li>계정</li>
+                    <li>자주 묻는 질문</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>ZIPFLIX KOREA</li>
+                    <li>통신판매업신고번호: 제2023-가나다라-0000호</li>
+                    <li>전화번호: 000-000-0000</li>
+                    <li>대표: 홍길동</li>
+                    <li>이메일: zipflix@official.com</li>
+                    <li>주소: 대전광역시 서구 둔산동 </li>
+                    <li>사업자등록번호: 000-00-00000</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/about.js"></script>
+</body>
+</html>
