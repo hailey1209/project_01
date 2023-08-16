@@ -1,8 +1,181 @@
-
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./footer.css');
 :root{
-    --main-color: #708090;
+    --main-color: #FF6347;
     --secondary-color: #4682B4;
     --main-bg-color: #FFFAFA;
     --main-btn-color: #008080;
-    --secondary-color: #FF6347;
+}
+body.dark{
+    background-color: #333;
+    color: white;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+
+/* 메인 상단 문구 */
+main .main-coment{
+    /* border: 1px solid red; */
+    height: 7rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 7rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+main .main-coment .coment{
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .main-coment .coment h1{
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+main .main-coment .coment p{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+/* 메인 영화 목록 스크롤 */
+main .main-scroll{
+    /* border: 1px solid red; */
+    height: 20rem;
+    width: 100%;
+    position: relative;
+}
+main .main-scroll .scroll-container{
+    /* border: 1px solid red; */
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;  
+}
+main .main-scroll .scroll-container .btns button{
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+main .main-scroll .scroll-container .btns button.dark{
+    background-color: #FFFAFA;
+
+}
+main .main-scroll .scroll-container .btns button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
+main .main-scroll .scroll-container .btns button:nth-child(1){
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .main-scroll .scroll-container .btns button:nth-child(2){
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .main-scroll .scroll-container .item-container{
+    /* border: 1px solid red; */
+    padding: 0.5rem 0;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 1;
+    transition: 0.3s;
+    overflow-x: scroll;
+
+}
+main .main-scroll .scroll-container .item-container::-webkit-scrollbar{
+    display: none;
+}
+main .main-scroll .scroll-container .item-container .item{
+    width: 150px;
+    min-width: 150px;
+    height: 100%;
+    margin: 0 0.5rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.2rem;
+    z-index: -1;
+}
+main .main-scroll .scroll-container .item-container .item.dark{
+    box-shadow: 0 0 0.3rem rgba(148, 148, 148, 0.3);
+}
+
+main .main-scroll .scroll-container .item-container .item .item-img{
+    width: 80%;
+    height: 50%;
+    margin: 0.5rem auto;
+    /* border: 1px solid red; */
+    background-color: #008080;
+    overflow: hidden;
+    border-radius: 0.2rem;
+}
+main .main-scroll .scroll-container .item-container .item .item-content{
+    /* border: 1px solid red; */
+    margin: 1rem;
+}
+main .main-scroll .scroll-container .item-container .item .item-content p{
+    font-size: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+/* 바로가기 버튼 */
+main .register-btns{
+    /* border: 1px solid red; */
+    height: 3rem;
+    margin-top: 4rem;
+}
+main .register-btns .btns{
+    /* border: 1px solid green; */
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .register-btns .btns button{
+    width: 8rem;
+    height: 100%;
+    margin: 0 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+main .register-btns .btns button a{
+    text-decoration: none;
+    color: white;
+}
+main .register-btns .btns button:hover{
+    background-color: #ff765e;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
 }

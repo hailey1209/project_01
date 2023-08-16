@@ -1,0 +1,144 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./footer.css');
+
+:root{
+    --main-color: #FF6347;
+    --secondary-color: #4682B4;
+    --main-bg-color: #FFFAFA;
+    --main-btn-color: #008080;
+}
+body.dark{
+    background-color: #333;
+    color: white;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+
+header .navbar .logo a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+/* 로그인 폼 */
+main {
+    /* border: 1px solid red; */
+    height: 30rem;
+    width: 100%;
+    margin-top: 10rem;
+    position: relative;
+}
+main .login-form{
+    /* border: 1px solid red; */
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .login-form p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+main .login-form p span{
+    color: var(--main-color);
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+main .login-form form{
+    /* border: 1px solid green; */
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+main .login-form form fieldset{
+    border: 2px solid var(--main-btn-color);
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    height: 80%;
+}
+main .login-form form fieldset legend{
+    position: relative;
+    text-align: center;
+    color: #008080;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+main .login-form form fieldset legend::before{
+    content: ' ';
+    border-left: 1px solid var(--main-btn-color);
+    margin-right: 1rem;
+}
+main .login-form form fieldset legend::after{
+    content: ' ';
+    border-right: 1px solid var(--main-btn-color);
+    margin-left: 1rem;
+}
+main .login-form form fieldset .form{
+    /* border: 1px solid red; */
+    height: 90%;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+main .login-form form fieldset .form input{
+    height: 1.5rem;
+    padding-left: 0.5rem;
+    outline: none;
+}
+main .login-form form fieldset .form .more{
+    margin-top: 2rem;
+    text-align: center;
+}
+main .login-form form fieldset .form .more a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    /* margin: 0 0.5rem; */
+    color: #333;
+}
+main .login-form form fieldset .form .more a:hover{
+    text-decoration: underline;
+}
+main .login-form form fieldset .form .more a:nth-child(2):before{
+    content: '/';
+    margin: 0 0.5rem;
+}
+main .login-form form fieldset .form .more a:nth-child(2)::after{
+    content: '/';
+    margin: 0 0.5rem;
+}
+main .login-form form fieldset .submit-btn{
+    /* border: 1px solid red; */
+    border-left: 1px solid var(--main-btn-color);
+    height: 100%;
+    flex: 1;
+    position: relative;
+    margin-left: 2rem;
+}
+main .login-form form fieldset .submit-btn button{
+    width: 8rem;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--main-btn-color);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+main .login-form form fieldset .submit-btn button:hover{
+    background-color: #039696;
+}
