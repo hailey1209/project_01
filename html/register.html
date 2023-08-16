@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+     <!-- HEADER -->
+     <header>
+        <!-- 헤더 메인 네비게이션 -->
+        <section class="navbar">
+            <div class="logo">
+                <a href="../index.html">ZIPFLIX</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./html/about.html">About</a></li>
+                    <li><a href="./html/mypage.html">My page</a></li>
+                </ul>
+            </div>
+            <div class="account">
+                <div class="avatar"></div>
+                <div class="userID">USER ID</div>
+            </div>
+            <div class="mode">
+                <span class="material-symbols-outlined toggle-on show">toggle_on</span>
+                <span class="material-symbols-outlined toggle-off">toggle_off</span>
+            </div>
+        </div>
+            <div class="ham-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+       <div class="register-form">
+        <fieldset>
+            <legend>회원가입</legend>
+            <div class="forms">
+                <ul>
+                    <li class="name">
+                        <label for="name">이름</label>
+                        <input type="text" name="name" id="name" placeholder="이름을 입력해주세요."><br>
+                        <div id="nameError" class="error"></div>
+                    </li>
+                    <li class="email">
+                        <label for="email">email</label>
+                        <input type="text" name="email" id="email" placeholder="이메일을 입력해주세요."><br>
+                        <div id="emailError" class="error"></div>
+                    </li>
+                    <li class="userId">
+                        <label for="userId">닉네임</label>
+                        <input type="text" name="userId" id="userId" placeholder="사용할 닉네임을 입력해주세요."><br>
+                        <div id="userIdError" class="error"></div>
+                    </li>
+                    <li class="password">
+                        <label for="password">비밀번호</label>
+                        <input type="password" name="password" id="password" placeholder="비밀번호를 입력해주세요"><br>
+                        <div id="passwordError" class="error"></div>
+                    </li>
+                    <li class="passwordCheck">
+                        <label for="passwordCheck">비밀번호 확인</label>
+                        <input type="password" name="passwordCheck" id="passwordCheck" placeholder="비밀번호를 다시 입력해주세요.">
+                        <div id="passwordCheckError" class="error">비밀번호가 일치하지 않습니다.</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="submit-btn">
+                <button type="submit">가입하기</button>
+            </div>
+        </fieldset>
+       </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer-container">
+            <div class="left">
+                <div class="logo">
+                    <h1>ZIPFLIX</h1>
+                </div>
+            </div>
+            <div class="mid">
+                <ul>
+                    <li>고객 센터</li>
+                    <li>미디어 센터</li>
+                    <li>이용약관</li>
+                    <li>쿠키설정</li>
+                    <li>문의하기</li>
+                    <li>법적고지</li>
+                    <li>계정</li>
+                    <li>자주 묻는 질문</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>ZIPFLIX KOREA</li>
+                    <li>통신판매업신고번호: 제2023-가나다라-0000호</li>
+                    <li>전화번호: 000-000-0000</li>
+                    <li>대표: 홍길동</li>
+                    <li>이메일: zipflix@official.com</li>
+                    <li>주소: 대전광역시 서구 둔산동 </li>
+                    <li>사업자등록번호: 000-00-00000</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

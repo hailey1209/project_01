@@ -76,6 +76,7 @@ header .navbar .account{
     height: 50%;
     display: flex;
     cursor: pointer;
+    display: none;
 }
 header .navbar .account .avatar{
     border: 1px solid lightgrey;
