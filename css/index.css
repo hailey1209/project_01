@@ -13,6 +13,8 @@ body.dark{
 }
 body{
     background-color: var(--main-bg-color);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* 메인 상단 문구 */
