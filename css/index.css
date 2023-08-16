@@ -21,7 +21,7 @@ main .main-coment{
     height: 7rem;
     width: 90%;
     margin: auto;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     text-align: center;
     padding: 1rem;
     position: relative;

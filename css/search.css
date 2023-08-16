@@ -1,0 +1,122 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./footer.css');
+
+:root{
+    --main-color: #FF6347;
+    --secondary-color: #4682B4;
+    --main-bg-color: #FFFAFA;
+    --main-btn-color: #008080;
+}
+body.dark{
+    background-color: #333;
+    color: white;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+
+header .navbar .logo a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+footer{
+    display: none;
+}
+
+/* 검색창 */
+main{
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+    z-index: 0;
+}
+main .search-container{
+    /* border: 1px solid red; */
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+main .search-container .search-bar{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+main .search-container .search-bar input{
+    width: 15rem;
+    height: 2rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border: none;
+    border: 2px solid var(--main-color);
+    border-radius: 0.5rem 0 0 0.5rem;
+    outline: none;
+}
+main .search-container .search-bar button{
+    border: 2px solid #FF6347;
+    width: 5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+main .search-container .search-bar button:hover{
+    background-color: #ff745c;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+}
+main .search-container .result-container{
+    /* border: 1px solid red; */
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .search-container .result-container .result-item{
+    margin: 0.5rem;
+    /* border: 1px solid green; */
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    flex: 1;
+    min-width: 200px;
+    max-width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+main .search-container .result-container .result-item.dark{
+    box-shadow: 0 0 0.3rem rgba(189, 189, 189, 0.5);
+}
+main .search-container .result-container .result-item:hover{
+    transform: scale(1.01);
+}
+main .search-container .result-container .result-item .item-img{
+    width: 70%;
+    height: 70%;
+    background-color: #333;
+    margin: 0.5rem auto;
+}
+main .search-container .result-container .result-item .item-img img{
+    width: 100%;
+}
+main .search-container .result-container .result-item .item-detail{
+    /* border: 1px solid red; */
+    margin-top: 0.5rem;
+    text-align: center;
+}
+main .search-container .result-container .result-item .item-detail h3{
+    margin: 0.3rem 0;
+}
+main .search-container .result-container .result-item .item-detail p{
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+main .search-container .result-container .result-item .item-detail p.dark{
+    color: white;
+}
